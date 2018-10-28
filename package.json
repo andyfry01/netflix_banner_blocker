@@ -1,0 +1,12 @@
+{
+  "author": "Andy Fry",
+  "description": "Blocks the Netflix banner ad on the Netflix main page",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "netflix_banner_blocker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andyfry01/netflix_banner_blocker.git"
+  },
+  "version": "1.0.0"
+}
