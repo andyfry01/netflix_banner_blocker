@@ -1,11 +1,17 @@
 {
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
   "browser_action": {
     "default_popup": "index.html"
   },
   "content_scripts": [{
     "js": ["index.js"],
     "matches": ["*://*.netflix.com/*"],
-    "run_at": "document_end"
+    "run_at": "document_start"
   }],
   "description": "Blocks the Netflix banner ad on the Netflix main page",
   "icons": {
@@ -13,5 +19,9 @@
   },
   "manifest_version": 2,
   "name": "Netflix Banner Blocker",
+  "permissions": [
+    "webNavigation"
+  ],
   "version": "1.0"
 }
+
